@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { fetchWeather } from '../actions';
 
-import SearchBar from '../container/SearchBar';
+import SearchBar from '../containers/SearchBar';
+import WeatherList from '../containers/WeatherList';
 
 export default class App extends Component {
   render() {
     return (
-      <div><SearchBar /></div>
+      <div>
+        <SearchBar />
+        <WeatherList />
+      </div>
     );
   }
 }
